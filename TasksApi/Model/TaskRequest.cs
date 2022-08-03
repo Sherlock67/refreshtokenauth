@@ -1,4 +1,6 @@
-﻿namespace TasksApi.Model
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace TasksApi.Model
 {
     public class TaskRequest
     {
@@ -8,6 +10,7 @@
 
         public DateTime Ts { get; set; }
 
-
+        //[ForeignKey("User")]
+        public int UserId { get; set; }
     }
 }
