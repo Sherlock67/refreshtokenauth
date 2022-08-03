@@ -17,9 +17,9 @@ namespace TasksApi.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Get()
+        public async Task<IActionResult> Get(int UserId)
         {
-            var getTasksResponse = await taskService.GetTasks(userId);
+            var getTasksResponse = await taskService.GetTasks(UserId);
 
             if (!getTasksResponse.Success)
             {
