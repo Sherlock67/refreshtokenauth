@@ -7,7 +7,6 @@
             RefreshTokens = new HashSet<RefreshTokens>();
             Tasks = new HashSet<Task>();
         }
-
         public int Id { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
@@ -16,7 +15,6 @@
         public string LastName { get; set; }
         public DateTime Ts { get; set; }
         public bool Active { get; set; }
-
         public virtual ICollection<RefreshTokens> RefreshTokens { get; set; }
         public virtual ICollection<Task> Tasks { get; set; }
     }

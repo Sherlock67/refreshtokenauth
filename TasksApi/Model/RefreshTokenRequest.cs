@@ -1,6 +1,6 @@
 ﻿namespace TasksApi.Model
 {
-    public class RefreshToken
+    public class RefreshTokenRequest
     {
         public int UserId { get; set; }
 
